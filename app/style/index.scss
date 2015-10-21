@@ -1,0 +1,62 @@
+#background {
+    background-image: url(../image/background.jpg);
+    // height: 100vh;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    min-height: 100vh;
+
+    header {
+        padding: 3rem 0;
+        #logo {
+            float: left;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: $white;
+            text-decoration: none;
+        }
+
+        nav {
+            float: right;
+            ul {
+                list-style: none;
+                margin: 0;
+                li {
+                    display: inline-block;
+                    margin-left: 2.5rem;
+                    padding-bottom: 0.2rem;
+                    border-bottom: 0;
+                    transition: border-bottom .2s ease-in-out;
+                    a {
+                        color: $white;
+                        text-decoration: none;
+                    }
+                    &:hover {
+                        border-bottom: 1px $white solid;
+                    }
+                }
+            }
+        }
+    }
+
+    h1 {
+        color: $white;
+        font-size: 2.5rem;
+        font-weight: 300;
+        letter-spacing: 1px;
+        margin: 7rem 0 2rem 0;
+    }
+
+    footer {
+        margin-top: 11rem;
+        padding-bottom: 1rem;
+        p {
+            color: $white;
+        }
+    }
+
+    .button {
+        margin: 1.5rem 2% 0 2%;
+    }
+}

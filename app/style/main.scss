@@ -1,5 +1,64 @@
-@import './normalize.css';
+$white: #ffffff;
+$highlight: #d2476e;
+$dark: #222222;
 
-h1 {
-    color: orange;
+html, body {
+    // height: 100vh;
 }
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.wrapper_wide {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.wrapper_skinny {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.cf:before, .cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.button {
+    color: $white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    outline: none;
+    border: none;
+    display: inline-block;
+    min-width: 8.5rem;
+}
+
+.button_highlight {
+    background: $highlight;
+    transition: background .3s ease-in-out;
+    &:hover {
+        background: darken($highlight, 9%);
+    }
+}
+
+.button_white {
+    background: $white;
+    color: $dark;
+    transition: background .3s ease-in-out;
+    &:hover {
+        background: darken($white, 9%);
+    }
+}
+
+
+@import './index.scss';
+@import './normalize.css';

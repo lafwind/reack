@@ -12,28 +12,10 @@ var config = {
         loaders: [
             { test: /\.js$/, loader: 'babel', exclude: /node_modules/ },
             { test: /\.css$/, loader: 'style!css' },
-            { test: /\.scss$/, loader: 'style!css!sass' }
+            { test: /\.scss$/, loader: 'style!css!sass' },
+            {test: /\.(jpg|png)$/, loader: "url?limit=8192"}
         ]
     }
 };
 
 module.exports = config;
-
-// module.exports = {
-//     entry: ['webpack/hot/dev-server', './main.js'],
-//     // './app/main.js',
-
-
-//     output: {
-//         path: __dirname,
-//         filename: 'bundle.js'
-//     },
-
-//     module: {
-//         loaders: [
-//             { test: /\.js$/, loader: 'babel', exclude: /node_modules/ },
-//             { test: /\.css$/, loader: 'style!css' },
-//             { test: /\.scss$/, loader: 'style!css!sass' }
-//         ]
-//     }
-// };
