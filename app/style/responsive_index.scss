@@ -1,0 +1,42 @@
+@media screen and (max-width: 990px) {
+    html, body {
+        font-size: 10px;
+    }
+
+    #background {
+        header {
+            padding: 0;
+            #logo {
+                display: block;
+                float: none;
+                margin-top: 8rem;
+                font-size: 3rem;
+            }
+
+            nav {
+                display: none;
+                float: none;
+                ul {
+                    li {
+                        display: block;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+
+        h1 {
+            margin: 6rem auto;
+            font-size: 2rem;
+        }
+
+        footer {
+            margin-top: 8rem;
+        }
+
+        .button {
+            display: block;
+            margin-bottom: 2rem;
+        }
+    }
+}

@@ -39,7 +39,7 @@ html, body {
     outline: none;
     border: none;
     display: inline-block;
-    min-width: 8.5rem;
+    min-width: 6rem;
 }
 
 .button_highlight {
@@ -60,5 +60,8 @@ html, body {
 }
 
 
+
+@import './responsive_main.scss';
 @import './index.scss';
+@import './responsive_index.scss';
 @import './normalize.css';

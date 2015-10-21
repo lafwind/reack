@@ -26,8 +26,7 @@
                     display: inline-block;
                     margin-left: 2.5rem;
                     padding-bottom: 0.2rem;
-                    border-bottom: 0;
-                    transition: border-bottom .2s ease-in-out;
+                    border-bottom: 0 $white solid;
                     a {
                         color: $white;
                         text-decoration: none;
@@ -47,6 +46,7 @@
         letter-spacing: 1px;
         margin: 7rem 0 2rem 0;
     }
+
 
     footer {
         margin-top: 11rem;
