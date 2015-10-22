@@ -1,9 +1,8 @@
 $white: #ffffff;
 $highlight: #d2476e;
-$dark: #222222;
+$dark: #36495e;
 
 html, body {
-    // height: 100vh;
 }
 
 .wrapper {
@@ -17,7 +16,7 @@ html, body {
 }
 
 .wrapper_skinny {
-    width: 60%;
+    width: 50%;
     margin: 0 auto;
 }
 
@@ -29,6 +28,77 @@ html, body {
 .cf:after {
     clear: both;
 }
+
+header {
+    padding: 2.5rem 0;
+    #logo {
+        float: left;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: $dark;
+        text-decoration: none;
+    }
+    nav {
+        float: right;
+        ul {
+            list-style: none;
+            margin: 0;
+            li {
+                display: inline-block;
+                margin-left: 2.5rem;
+                padding-bottom: 0.2rem;
+                border-bottom: 0 $dark solid;
+                a {
+                    display: inline-block;
+                    padding-bottom: 0.2rem;
+                    color: $dark;
+                    text-decoration: none;
+                    &:hover {
+                        border-bottom: 1px $dark solid;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.banner {
+    height: 3rem;
+    background-color: $dark;
+    margin-bottom: 2rem;
+}
+
+footer {
+    padding-bottom: 1rem;
+    margin-top: 3rem;
+    text-align: center;
+    p {
+        color: $dark;
+    }
+}
+
+.form {
+    form {
+        .field {
+            margin: 1rem auto;
+            label {
+                display: block;
+                margin: 0.5rem auto;
+                color: $dark;
+            }
+            input[type="email"], input[type="password"], textarea {
+                width: 100%;
+                padding: .5rem .5rem;
+            }
+
+            textarea {
+                margin-bottom: 3rem;
+            }
+        }
+    }
+}
+
 
 .button {
     color: $white;
@@ -57,6 +127,11 @@ html, body {
     &:hover {
         background: darken($white, 9%);
     }
+}
+
+.button_block {
+    display: block;
+    margin: 0 auto;
 }
 
 
