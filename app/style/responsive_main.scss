@@ -1,8 +1,54 @@
 @media screen and (max-width: 660px) {
     html, body {
-        font-size: 10px;
+        font-size: 12px;
+        box-sizing: border-box !important;
     }
+
+    header {
+        text-align: center;
+        .wrapper_wide {
+            width: 100%;
+
+            #logo {
+                float: none;
+                font-size: 2rem;
+            }
+
+            nav {
+                box-sizing: border-box;
+                height: 3rem;
+                background-color: $dark;
+                line-height: 3rem;
+
+                // padding: 1rem 0;
+                margin-top: 2.5rem;
+                float: none;
+                ul {
+                    padding: 0;
+                    li {
+                        margin: 0 2rem;
+                        a {
+                            color: $white;
+                            &:hover {
+                                border-bottom: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    .banner {
+        display: none;
+    }
+
+    form {
+        width: 90%;
+    }
+
     .button {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 }
