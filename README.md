@@ -1,3 +1,3 @@
-### Red-Black
+### Reack
 
-* A theme
+* An UI design
