@@ -45,7 +45,18 @@
     }
 
     form {
-        width: 90%;
+        width: 100%;
+        .field {
+            input[type="email"], input[type="password"], textarea {
+                border-radius: 0;
+                -webkit-appearance:none; //去除系统默认的样式
+                -webkit-tap-highlight-color: rgba(0, 0, 0, 0); // 点击高亮的颜色
+                transition: all .1s ease-in-out;
+                &:focus {
+                    box-shadow: 0 0 0.5rem lighten($dark, 50%);
+                }
+            }
+        }
     }
 
     .button {
